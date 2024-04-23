@@ -1,1 +1,13 @@
+ikd tree:
+
+Q1: 构建k-d树（createKDTree)
+    输入：数据点集Data-set和其所在的空间Range
+    输出：Kd，类型为k-d tree
+ 
+"核心算法流程"
+    1). 确定split域：对于所有描述子数据（特征矢量），统计它们在每个维上的数据方差。数据方差大表明沿该坐标轴方向上的数据分散得比较开，在这个方向上进行数据分割有较好的分辨率；
+    2). 确定Node-data域：数据点集Data-set按其第split域的值排序。位于正中间的那个数据点被选为Node-data,新的点集DataSets去除Node-data点；
+    3). 以中间点Node-data为标准，小于Node-data[split]化为左点集，大于Node-data[split]化为右点集；
+    4). 左右两边分别建立k-d tree, 即递归调用createKDTree;
+
 
