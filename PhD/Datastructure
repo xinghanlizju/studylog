@@ -1,5 +1,3 @@
-ikd tree:
-
 Q1: 构建k-d树（createKDTree)
     输入：数据点集Data-set和其所在的空间Range
     输出：Kd，类型为k-d tree
@@ -10,4 +8,9 @@ Q1: 构建k-d树（createKDTree)
     3). 以中间点Node-data为标准，小于Node-data[split]化为左点集，大于Node-data[split]化为右点集；
     4). 左右两边分别建立k-d tree, 即递归调用createKDTree;
 
+ikd-tree:
+    1). 确定要删除节点，放置delete_flag = true。
+    2). whenxxxx, 我们将要删除节点。
+
+Hashmap:
 
