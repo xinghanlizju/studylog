@@ -25,6 +25,7 @@ git commit
 The next step is very important. The situation is that main branch of remote is modificated by others. We need to update others change. Hence, we choose the followeing workflow.
 -. change the main branch of local for sycronize the one of remote
 -. rebase the main branch of local.
+
 5. Switch into the main branch of local.
 ```
 git checkout main
@@ -39,4 +40,14 @@ Swich into my-feature branch of local.
 ```
 git checkout
 ```
+Rebase the main branch
+```
+git rebase
+```
 
+7. Force push
+```
+git push -f origin my-feature
+```
+
+8. squash and merge. In final, we will modify the code in the main branch.
